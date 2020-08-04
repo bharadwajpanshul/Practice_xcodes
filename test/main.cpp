@@ -7,9 +7,15 @@
 //
 
 #include <iostream>
-
+using namespace std;
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int n;int r=0;
+    cin>> n;
+    while(n>0)
+    {
+        r=(r*10)+n%10;
+        n=n/10;
+    }
+    cout<<r;
     return 0;
 }
