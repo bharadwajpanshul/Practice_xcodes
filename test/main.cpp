@@ -9,13 +9,17 @@
 #include <iostream>
 using namespace std;
 int main(int argc, const char * argv[]) {
-    int n;int r=0;
+ //sum of all digits in a number //
+    int n;
     cin>> n;
+    int add=0;
     while(n>0)
     {
-        r=(r*10)+n%10;
+        int r=0;
+        r=n%10;
+        add = r+add;
         n=n/10;
     }
-    cout<<r;
+    cout<<add;
     return 0;
 }
